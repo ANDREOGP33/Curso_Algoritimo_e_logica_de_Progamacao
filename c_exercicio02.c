@@ -10,10 +10,10 @@ int main()
     scanf("%lf", &base);
 
     printf("Altura do retangulo: ");
-    scanf("%ls", &altura);
+    scanf("%lf", &altura);
 
     area = base * altura;
-    perimetro = base + altura + base + altura;
+    perimetro = 2 * (base + altura);
     diagonal = sqrt(base * base + altura * altura);
 
     printf("Area: %.4lf \n", area);
@@ -21,4 +21,4 @@ int main()
     printf("Diagonal: %.4lf\n", diagonal);
 
     return 0;
-}
+	}
