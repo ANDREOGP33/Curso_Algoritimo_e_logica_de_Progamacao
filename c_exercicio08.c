@@ -10,7 +10,6 @@ int main()
     
     soma = 0;
     total = 0;
-    
     while (idade >= 0)
     {
         soma = soma + idade;
