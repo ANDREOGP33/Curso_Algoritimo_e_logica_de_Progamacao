@@ -1,33 +1,32 @@
 #include <stdio.h>
 
-int mais()
+int main()
 {
-    int idade, total;
-    double media, soma;
+    int idade, total, soma;
+    double media;
 
     printf("Digite as idades: \n");
-    idade = 0;
-    total = 0;
-    scanf("%d\n", &idade);
-    total = total + 1;
-
-    media = 0;
+    scanf("%d", &idade);
+    
     soma = 0;
-
-    if (idade < 0)
+    total = 0;
+    
+    while (idade >= 0)
+    {
+        soma = soma + idade;
+        total = total + 1;
+        scanf("%d", &idade);
+    }
+    
+    if (total == 0)
     {
         printf("IMPOSSIVEL CALCULAR");
-    }   
-    else
-    {
-        scanf("%d\n",&idade);
-        total = total + 1; 
-        soma = soma + idade;
     }
-
-    media = soma / total;
-    printf("Media das idades: ");
-    scanf("%lf", &media);
+    else 
+    {
+        media = (double)soma / total;
+        printf("Media = %.2lf", media);
+    }
 
     return 0;
 }
