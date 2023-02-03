@@ -24,7 +24,6 @@ int main()
     }
 
     int idadetotal, m16;
-
     idadetotal = 0;
     for (i = 0; i < n; i++)
     {
